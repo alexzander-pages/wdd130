@@ -1,0 +1,53 @@
+body {
+    background-color: steelblue;
+}
+header p {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+header p:hover {
+    color:black;
+}
+.pn-quote {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    text-align: center;
+    padding: 5px;
+    font-size: .69em;
+}
+#quote {
+    font-size: .5em;
+}
+.gospel {
+    color: black;
+    padding: 5px;
+    font-size: .69em;
+    display: block;
+    width: 35%;    
+    margin: 0 auto;
+}
+.big {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em;
+}
+footer {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    text-align: center;
+    padding: 1px;
+    font-size: .5em;
+}
+#portrait {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
