@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=BBH+Sans+Bogle&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+
 body {
     background-color: 	white;
+    font-family: Roboto, Helvetica, 'Times New Roman';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 #content {
     max-width: 1600px;
@@ -8,6 +17,9 @@ body {
 header{
     background-color: #22577a;
 }
+#logo_link {
+    padding-top: 5px;
+}
 .logo {
     width: 80px;
 }
@@ -15,6 +27,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     color: black;
@@ -30,9 +43,12 @@ nav a:hover {
 }
 .home-title {
     color: white;
+    font-family: Rock Salt, BBH Sans Bogle, Anton;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
-    color:white;
+    color:white;;
 }
 .button-box {
     text-align: center;
@@ -41,30 +57,51 @@ main section {
     text-align: center;
 }
 #background {
+    background-color: #22577a;
     height: 725px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+.msg {
+    background-color: #22577a;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: white;
+    font-family: Rock Salt, BBH Sans Bogle, Anton;
 }
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 .book, .join {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     color: black;
 }
-#background {
-    background-color: #22577a;
+.card-img {
+    border: 10px solid #000000;
 }
-.msg {
-    background-color: #22577a;
+main section img {
+    box-sizing: border-box;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin-top: 200px;
 }
 footer {
     background-color: #22577a;
     color: white;
+    padding: 25px 50px;
 }
 footer a {
     color: white;
@@ -79,6 +116,6 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
-.icon {
-    width: 80px;
+footer .social img {
+    padding-top: 15px;
 }
