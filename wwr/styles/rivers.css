@@ -64,7 +64,7 @@ main section {
     text-align: center;
 }
 .idaho-card, .utah-card, .arizona-card {
-    background-color: #white;
+    background-color: white;
     line-height: 1.5em;
     padding: 35px;
     box-shadow: 5px 5px 10px black;
@@ -282,7 +282,7 @@ main section {
     text-align: center;
 }
 .idaho-card, .utah-card, .arizona-card {
-    background-color: #white;
+    background-color: white;
     line-height: 1.5em;
     padding: 35px;
     box-shadow: 5px 5px 10px black;
