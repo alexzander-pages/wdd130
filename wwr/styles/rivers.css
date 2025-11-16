@@ -192,10 +192,6 @@ main section img {
     grid-row: 2/3;
     align-self: end;
 }
-
-
-
-
 footer {
     background-color: #22577a;
     color: white;
@@ -221,45 +217,221 @@ footer .social img {
     padding-top: 15px;
 }
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    #hero-msg h1 {
-        color: #6f7364;
-    }
-    .home-title {
-        font-size: 25px;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
+
+body {
+    background-color: 	white;
+    font-family: Roboto, Helvetica, 'Times New Roman';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header{
+    background-color: #22577a;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover {
+    color: black;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    text-align: center;
+}
+.home-title {
+    color: black;
+    font-family: Rock Salt, BBH Sans Bogle, Anton;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+.button-box1,.button-box2, .button-box3 {
+    text-align: center;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+main section {
+    text-align: center;
+}
+.idaho-card, .utah-card, .arizona-card {
+    background-color: #white;
+    line-height: 1.5em;
+    padding: 35px;
+    box-shadow: 5px 5px 10px black;
+}
+.home-grid h2 {
+    color: white;
+    font-family: Roboto, Helvetica, 'Times New Roman';
+}
+.home-grid p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.book1, .book2, .book3 {
+    background-color: #22577a;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book1:hover, .book2:hover, .book3:hover {
+    color: black;
+}
+.utah-img, .idaho-img, .arizona-img {
+    border: 10px solid #000000;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px black;
+    width: 100%;
+    height: 100%;
+}
+.utah-img:hover, .idaho-img:hover, .arizona-img:hover {
+    opacity: .9;
+    transform: scale(1.5);
+}
+main section img {
+    box-sizing: border-box;
+}
+.idaho-card {
+    grid-column: 1/10;
+    grid-row: 1/2;
+}
+.utah-card {
+    grid-column: 2/11;
+    grid-row: 2/3;
+}
+.arizona-card {
+    grid-column: 1/10;
+    grid-row: 3/4;
+}
+.idaho-card, .utah-card, .arizona-card {
+    margin-top: 200px;
+}
+.paragraph{
+    background-color: #22577a;
+    line-height: 1.5em;
+    padding: 35px;
+    box-shadow: 5px 5px 10px black;
+    max-height: 750px;
+}
+.idaho-card {
+    display: grid;
+    grid-template-columns: 500px 50px 1fr;
+    grid-template-rows: 400px 100px 250px;
+    max-height: 775px;
+}
+.idaho-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 1;
+}
+#salmon-text {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    z-index: 2;
+}
+.button-box1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: end;
+}
+
+
+.utah-card {
+    display: grid;
+    grid-template-columns: 1fr 50px 500px;
+    grid-template-rows: 400px 50px 100px;
+    max-height: 575px;
+}
+.utah-img {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    z-index: 1;
+}
+#gray-text {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    z-index: 2;
+    max-height: 100%;
+}
+.button-box2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: end;
+}
+
+.arizona-card {
+    display: grid;
+    grid-template-columns: 500px 50px 1fr;
+    grid-template-rows: 400px 100px 100px;
+    max-height: 600px;
+}
+.arizona-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 1;
+}
+#grand-text {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    z-index: 2;
+}
+.button-box3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: end;
+}
+footer {
+    background-color: #22577a;
+    color: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: black;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
 }
