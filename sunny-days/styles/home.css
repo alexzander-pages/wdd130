@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Ledger&family=Rock+Salt&display=swap');
+
+
 /* General Pag Layout ------------------------------*/
 body {
     margin: 0;
@@ -5,6 +8,7 @@ body {
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: clamp(14px, 1.3vw, 18px);
+    font-family: 'ledger', serif, 'Times New Roman';
 
     display: grid;
     grid-template-areas:
@@ -90,6 +94,7 @@ nav a:hover {
     color: white;
     text-shadow: 2px 2px 8px black;
     font-size: clamp(1.5rem, 4vw, 3rem);
+    font-family: 'Rock Salt', 'ledger', serif;
     z-index: 10;
 }
 .rotating-msg {

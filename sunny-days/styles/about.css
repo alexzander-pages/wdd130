@@ -1,23 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Ledger&family=Rock+Salt&display=swap');
+
+
 body {
     background-color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'ledger', 'Rock Salt', serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "hero"
+        "main"
+        "footer";
 }
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-}
+
+/* --------------------------------------------HEADER------------------------------*/
+
 header {
+    grid-area: header;
     background-color: #168AAD;
+
     display: grid;
     grid-template-columns: 150px auto;
+    align-items: center;
+    height: 110px;
 }
-#logo_link {
-    padding-top: 5px;
+.logo_link {
     justify-self: center;
-    align-self: center;
 }
 .logo {
     width:80px;
@@ -30,6 +42,7 @@ header {
     background-color: white;
     border-radius: 50%;
     overflow: hidden;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,12 +55,90 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 50px;
+    padding: 15px 20px;
 }
 nav a:hover {
     color:black;
 }
+/*----------------------------------------HERO-----------------------------------------*/
+#hero {
+    grid-area: hero;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+#hero-box {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#hero-img {
+    width: 100%;
+    height: 100%;
+}
+.hero-msg {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    overflow: visible;
+}
+#fixed-msg {
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+
+/*---------------------------------------------MAIN------------------------------------*/
+main {
+    grid-area: main;
+    
+    display: grid;
+    grid-template-areas:
+        "goals why qualifications"
+        "who who who";
+    font-size: 10px;
+    gap: 20px;
+    padding: 20px;
+}
+main li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    max-width: 80%;
+    list-style-type: disc;
+}
+.who {
+    grid-area: who;
+    padding: 10px;
+    position: relative;
+    left: 30px;
+}
+.why {
+    grid-area: why;
+    padding: 10px;
+}
+.qualifications {
+    grid-area: qualifications;
+    padding: 10px;
+}
+.goals {
+    grid-area: goals;
+    position: relative;
+    left: 30px;
+}
+
+
+/*--------------------------------------------FOOTER------------------------------------------*/
 footer {
+    grid-area: footer;
     background-color: #168AAD;
 }
 .top-footer, .bottom-footer {
